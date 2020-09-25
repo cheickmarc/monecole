@@ -96,10 +96,10 @@ $db['default'] = array(
 
 
  // database connection here
-$db['default']['hostname'] = "";
-$db['default']['username'] = "";
-$db['default']['password'] = "";
-$db['default']['database'] = "";
+$db['default']['hostname'] = "localhost";
+$db['default']['username'] = "marc";
+$db['default']['password'] = "polaroid2010";
+$db['default']['database'] = "monecole";
 
 
 
