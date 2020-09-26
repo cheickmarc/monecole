@@ -46,7 +46,7 @@
     <?php if(has_permission(VIEW, 'accounting', 'income')){ ?>
         <div class="col-md-2 col-sm-4 col-xs-12 tile_stats_count">
             <div class="stats-count-inner">
-                <span class="count_top"><strong class="green"><?php echo $this->gsms_setting->currency_symbol; ?></strong> <?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('income'); ?></span>
+                <span class="count_top"><?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('income'); ?>&nbsp;<strong class="green"><?php echo $this->gsms_setting->currency_symbol; ?></strong> </span>
                 <div class="count green"><?php echo $total_income ? $total_income : '0.00'; ?></div>
                 <span class="count_bottom"><?php echo isset($year_session->session_year) ? $year_session->session_year : '' ; ?></span>
             </div>
@@ -55,7 +55,7 @@
     <?php if(has_permission(VIEW, 'accounting', 'expenditure')){ ?>
     <div class="col-md-2 col-sm-4 col-xs-12 tile_stats_count">
         <div class="stats-count-inner">
-            <span class="count_top"> <strong class="red"><?php echo $this->gsms_setting->currency_symbol; ?></strong> <?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('expenditure'); ?></span>
+            <span class="count_top"> <?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('expenditure'); ?> <strong class="red"><?php echo $this->gsms_setting->currency_symbol; ?></strong></span>
             <div class="count red"><?php echo $total_expenditure? $total_expenditure : '0.00'; ?></div>
             <span class="count_bottom"><?php echo isset($year_session->session_year) ? $year_session->session_year : '' ; ?></span>
         </div>

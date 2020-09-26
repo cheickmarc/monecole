@@ -2,7 +2,7 @@
     <div class="<?php echo $this->gsms_setting->enable_rtl ? 'right_col' : 'left_col'; ?> scroll-view">
         <div class="navbar nav_title" style="border: 0;">
             <a href="<?php echo site_url('dashboard'); ?>" class="site_title_">
-                <span>Global School</span>
+                <span>Mon Ecole</span>
                 <?php if(isset($this->gsms_setting->brand_logo) && !empty($this->gsms_setting->brand_logo)){ ?>
                     <img class="logo" src="<?php echo UPLOAD_PATH; ?>/logo/<?php echo $this->gsms_setting->brand_logo; ?>" alt="" width="60" />
                 <?php }else{ ?>
